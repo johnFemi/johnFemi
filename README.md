@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @johnFemi
-- 👀 I’m interested in Full Stack Development
-- 🌱 I’m currently learning Frontend Development
+- 👀 I’m interested in Front End Development
+- 🌱 I’m currently working with JS  and React JS
 - 💞️ I’m looking to collaborate on Frontend Development
 - 📫 How to reach me on WhatsApp 09034351882
 
