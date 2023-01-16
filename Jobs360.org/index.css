@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=Jost:wght@500&family=Lobster+Two:wght@700&family=Merriweather:ital,wght@0,300;0,400;0,900;1,300;1,400&family=Mukta:wght@200;300&family=Raleway:wght@200&family=Roboto:ital,wght@0,400;1,300;1,900&family=Signika+Negative&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=Jost:wght@500&family=Lobster+Two:wght@700&family=Merriweather:ital,wght@0,300;0,400;0,900;1,300;1,400&family=Mukta:wght@200;300&family=Raleway:wght@200&family=Roboto:ital,wght@0,400;1,300;1,900&family=Signika+Negative:wght@400;500&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=Jost:wght@500&family=Lobster+Two:wght@700&family=Merriweather:ital,wght@0,300;0,400;0,900;1,300;1,400&family=Mukta:wght@200;300&family=Raleway:wght@200&family=Roboto:ital,wght@0,400;1,300;1,900&family=Rubik&family=Signika+Negative:wght@400;500&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Domine:wght@400;500&family=Jost:wght@500&family=Lobster+Two:wght@700&family=Merriweather:ital,wght@0,300;0,400;0,900;1,300;1,400&family=Mukta:wght@200;300&family=Raleway:wght@200&family=Roboto:ital,wght@0,400;1,300;1,900&family=Rubik&family=Signika+Negative:wght@400;500&family=Varela+Round&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+}
+.nav-header{
+    background-image: url(images/job\ 03.jpg);
+    background-size: cover;
+    height: 70vh;
+     background-attachment: fixed; 
+}
+.nav-overlay{
+    background-color: rgba(0, 0, 0, 0.473);
+    height: 70vh;
+}
+nav{
+     display: flex;
+     width: 300px;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 70px;
+    padding: 0  1.5em;
+    padding-top: 10px;
+    background-color: transparent;
+}
+/*nav img{*/
+/*    padding-top*/
+/*}*/
+nav .nav-menu{
+    
+     position: absolute; 
+     right: 1.5em; 
+    top: 0;
+    padding: 0;
+    margin: 0;
+     list-style: none; 
+     margin-top: 10px; 
+}
+nav .nav-item{
+    display: inline-block;
+}
+nav .nav-item > a{
+    display: inline-block;
+    padding: 0 1.5em;
+    line-height: 70px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+
+}
+nav .nav-item a:hover{
+    background-color: rgba(210, 105, 30, 0.562);
+    color: white;
+     margin: 10px; 
+    border-radius: 7px;
+}
+
+nav .log-in{
+    list-style: none;
+    display: flex;
+    padding-left: 20em;
+}
+
+nav .log-in a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+     font-weight: bolder; 
+    font-family: 'Raleway', sans-serif;
+
+}
+nav .log-in a:hover{
+    color: gainsboro;
+
+    
+}
+.dropdown{
+    display: none;
+}
+
+.header {
+    margin: 10%  10%;
+    padding-bottom: 20px;
+    color: white;
+     text-shadow: 2px 4px 1px chocolate; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+
+}
+.header .note span{
+    color: white;
+}
+.packages{
+    margin-top: 5%;
+    background-color: rgba(210, 105, 30, 0.541);
+}
+.carousel{
+    width: 900px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.carousel-item img{
+    height: 70vh;
+}
+.carousel-item .carousel-caption{
+    background-color: rgba(0, 0, 0, 0.568);
+    color: white;
+}
+.carousel-caption .btn{
+    background-color: chocolate;
+    border: 1px solid goldenrod;
+}
+.carousel-caption .btn:hover{
+    background-color: rgb(150, 62, 0);
+    border: 1px solid goldenrod;
+}
+.mobile-packages{
+    display: none;
+}
+
+.why{
+    background-color: rgba(255, 217, 0, 0.151);
+}
+.content{
+    padding: 50px;
+    width: 80%;
+    margin: auto;
+}
+.why-header h2{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    
+}
+.why-body .card{
+    border-radius: 15px;
+}
+.why-body .card:hover{
+    border: 1px solid chocolate;
+    box-shadow: 2px 2px 10px goldenrod;
+    background-color: rgba(218, 165, 32, 0.178);
+}
+.card-body h5{
+    text-align: center;
+}
+.ksc{
+    background-image: url(images/Kulll\ 04.jfif);
+     background-size: cover; 
+    height: 100vh;
+}
+.ksc h4{
+    background-color: rgba(0, 0, 0, 0.603);
+    width: 100%;
+    height: 100vh;
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Raleway', sans-serif; 
+    text-align: center;
+    padding-top: 22%;
+}
+.about{
+    background-image: url(images/about\ 03.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 90vh;
+}
+.about-overlay{
+    background-color: rgba(0, 0, 0, 0.726);
+    height: 90vh;
+}
+.about-title h2{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif; 
+     font-weight: bolder; 
+    color: white;
+
+}
+.about-content
+.content-1{
+    width: 70%;
+    margin: auto;
+}
+.content-1 p{
+    color: white;
+}
+.content-1 h5{
+    color: white;
+
+}
+.content-1 a{
+    background-color: chocolate;
+    border: 1px solid rgb(224, 164, 10);
+}
+.content-1 a:hover{
+    background-color: rgb(206, 86, 0);
+    border: 1px solid rgb(207, 151, 10);
+}
+
+.artisan{
+    background-image: url(images/Artisan\ 01.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    
+}
+.artisan-overlay{
+    background-color: rgba(0, 0, 0, 0.411);
+    height: 70vh;
+}
+.artisan .artisan-header{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    width: 900px;
+    margin: auto;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+.artisan-link{
+    width: 400px;
+    margin: auto;
+    background-color: chocolate;
+    border: 1px solid gold;
+    border-radius: 10px;
+    text-align: center;
+
+}
+.artisan-link:hover{
+    background-color: rgb(146, 61, 0);
+}
+.artisan-link .link{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 35px;
+}
+.artisan-link .link:hover{
+    color: white;
+    font-size: 40px;
+}
+.call{
+    margin: 5%;
+}
+
+.call ul{
+    list-style: none;
+
+}
+.call ul  li a{
+    color: chocolate;
+    font-size: 20px;
+     font-family: 'Raleway', sans-serif; 
+    text-decoration: none;
+}
+.call ul  li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.join-content{
+    background-color: rgba(210, 105, 30, 0.322);
+}
+.join-content .join-us{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 1000px;
+    margin: auto;
+}
+.footer{
+    background-color: chocolate;
+    margin-bottom: -1.5%;
+
+}
+.inner-footer{
+    padding: 5%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.inner-footer h5{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.about-footer p{
+    color: white;
+}
+.about-footer .btn{
+    background-color: goldenrod;
+    border: 1px solid whitesmoke;
+}
+.about-footer .btn:hover{
+    background-color: chocolate;
+    border: 1px solid whitesmoke;
+}
+.address-footer{
+    width: 250px;
+}
+.address-footer .add-seg h6{
+    color: black;
+}
+.address-footer .add-seg{
+    color: white;
+}
+.add-seg a{
+    color: #38322f;
+}
+.inner-footer .quick-links ul{
+    list-style: none;
+    
+}
+.inner-footer .quick-links ul li{
+    margin: 10px;  
+}
+.inner-footer .quick-links ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.inner-footer .quick-links ul li a:hover{
+    color: goldenrod;
+}
+.inner-footer .social-footer ul{
+    list-style: none;
+}
+
+
+.inner-footer .social-footer ul li a{
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+.inner-footer .social-footer ul li a:hover{
+    color: goldenrod;
+}
+
+
+
+.outer-footer #copyright{
+    text-align: center;
+    color:  rgba(255, 255, 255, 0.527);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+
+
+
+@media screen and (max-width: 786px) {
+    body{
+        overflow-x: hidden;
+        width: 500px;
+    }
+    .popup{
+        
+        width: 350px;
+       
+    }
+    .nav-header{
+        background-image: url(images/job\ 03.jpg);
+        background-size: cover;
+        height: 50vh;
+        margin-top: -10%;
+         background-attachment: fixed; 
+    }
+    .nav-overlay{
+        background-color: rgba(0, 0, 0, 0.473);
+        height: 50vh;
+    }
+    nav{
+        position: fixed;
+        width: 100%;
+        z-index: 99999;
+        background-color: rgba(255, 255, 255, 0.884);
+    }
+    
+    .nav-menu{
+        display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+    .header{
+        padding-top: 30%;
+        padding-bottom: 20px;
+        color: white;
+         text-shadow: 2px 4px 1px chocolate; 
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+    
+    }
+    .header .note span{
+        color: white;
+        font-size: 15px;
+    }
+    .packages{
+        background-color: rgba(210, 105, 30, 0.541);
+    }
+    .carousel{
+        width: 470px;
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .carousel-item img{
+        height: 38vh;
+    }
+    .mobile-packages{
+        display: block;
+    }
+    .plan{
+    padding-top: 5%;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    }
+    .plan .card-header{
+        background-color: rgb(163, 68, 0);
+        color: gold;
+    }
+    .plan h3, .card-header{
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+    }
+    .plan .card{
+        display: inline-block;
+        margin: 20px;
+        border-radius: 10px;
+    }
+    .plan .card:hover{
+        box-shadow: 5px 5px 4px chocolate;
+    }
+    .plan .card-body{
+        background-color: rgba(219, 185, 99, 0.699);
+        border-radius: 15px;
+    }
+    .plan .card-body p, h5{
+        color: rgb(223, 93, 1);
+    }
+    .plan .card .btn{
+        margin-right: 50px;
+        background-color: chocolate;
+        border: 1px solid goldenrod;
+        border-radius: 30px;
+    }
+    .plan .card .btn:hover{
+        background-color: rgb(148, 62, 0);
+        border: 1px solid rgb(219, 158, 4);
+    }
+    .plan .soap .card-header{
+        background-color: rgb(163, 68, 0);
+    }
+    .plan .soap .card-body{
+        background-color: whitesmoke;
+        border-radius: 5px;
+    }
+   .ksc{
+        background-image: url(images/Kulll\ 04.jfif);
+         background-size: cover; 
+        height: 70vh;
+    }
+    .ksc h4{
+        background-color: rgba(0, 0, 0, 0.603);
+        width: 500px;
+        height: 70vh;
+        color: white;
+        font-size: 25px;
+        padding-top: 27%;
+    }
+    .artisan{
+        background-image: url(images/Artisan\ 01.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        height: 40vh;
+        
+    }
+    .artisan-overlay{
+        background-color: rgba(0, 0, 0, 0.411);
+        height: 40vh;
+    }
+    .artisan .artisan-header{
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        width: 400px;
+        margin: auto;
+        font-size: 20px;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+    .artisan-link{
+        width: 200px;
+        margin: auto;
+        background-color: chocolate;
+        border: 1px solid gold;
+        border-radius: 10px;
+        text-align: center;
+    
+    }
+    .artisan-link:hover{
+        background-color: rgb(146, 61, 0);
+    }
+    .artisan-link .link{
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 20px;
+    }
+    .artisan-link .link:hover{
+        color: white;
+        font-size: 20px;
+    }
+    .join-content .join-us{
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 300px;
+        margin: auto;
+    }
+    .footer{
+        margin-bottom: -17px;
+    }
+    .inner-footer{
+        padding: 5%;
+        display: block;
+         justify-content: space-around;    
+    }
+    .inner-footer h5{
+        color: black;
+    }
+    .about-footer p, .btn{
+        color: white;
+         text-align: center; 
+        margin-left: 50px;
+    }
+    .address-footer h5{
+        padding-top: 10%;
+        padding-left: 50%;
+
+    }
+    .address-footer h6, .address-footer p{
+        width: 300px;
+        margin-left: 50px;
+    }
+    .inner-footer .quick-links ul li{
+        margin: 10px;
+        display: inline-block;  
+    }
+    .inner-footer .social-footer ul li{
+        display: inline-block;
+        margin-left: 10%;
+    }
+}

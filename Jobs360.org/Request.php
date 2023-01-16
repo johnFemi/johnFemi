@@ -1,0 +1,216 @@
+<?php
+include('includes/db.php');
+error_reporting(0);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job360/Artisan Request</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5072971621875839"
+     crossorigin="anonymous"></script>
+     <script src="scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="scripts/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+    <script src="sweetalert/sweetalert.js"></script>
+    <style>
+        nav{
+     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 70px;
+    padding: 0  1.5em;
+    /* margin-top: 10px; */
+    background-color: chocolate;
+}
+
+nav .nav-menu{
+    
+    /* position: absolute; */
+    /* right: 1.5em; */
+    top: 0;
+    padding: 0;
+    margin: 0;
+    /* list-style: none; */
+    /* margin-top: 10px; */
+}
+nav .nav-item{
+    display: inline-block;
+}
+nav .nav-item > a{
+    display: inline-block;
+    padding: 0 1.5em;
+    line-height: 70px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+
+}
+nav .nav-item a:hover{
+    background-color: rgba(210, 105, 30, 0.562);
+    color: white;
+    /* margin: 10px; */
+    border-radius: 7px;
+}
+
+nav .log-in{
+    list-style: none;
+    display: flex;
+    padding-left: 20em;
+}
+
+nav .log-in a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    /* font-weight: bolder; */
+    font-family: 'Raleway', sans-serif;
+
+}
+nav .log-in a:hover{
+    color: gainsboro;
+
+    
+}
+.dropdown{
+    display: none;
+}
+.get h2{
+    text-align: center;
+    padding-top: 5%;
+}
+.row{
+    padding-top: 5%;
+    width: 900px;
+    margin: auto;
+}
+.row .btn{
+    background-color: chocolate;
+    border: 1px solid goldenrod;
+}
+.row .btn:hover{
+    background-color: rgb(161, 67, 0);
+    border: 1px solid goldenrod;
+}
+
+@media screen and (max-width: 786px) {
+    body{
+        overflow-x: hidden;
+        /* width: 424px; */
+    }
+   
+  .dropdown{
+    display: block;
+ }
+ .nav-menu{
+    display: none;
+ }
+ .row{
+    padding-top: 5%;
+    width: 400px;
+    margin: auto;
+}
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.php">
+                <img src="images/images__1_-removebg-preview.png" alt="" style="width: 100px;">
+            </a>
+
+        </div>
+        
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="index.php">Home</a></li>
+              <li><a class="dropdown-item" href="Artisans.php">Artisan</a></li>
+              <li><a class="dropdown-item" href="Request.html">Get an Artisan</a></li>
+              <li><a class="dropdown-item" href="about.html">About</a></li>
+              <li><a class="dropdown-item" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.php">Home</a></li>
+            <li class="nav-item dropdown">
+                <a href="Artisans.php">Artisans</a>
+            </li>
+            <li class="nav-item dropdown">
+                         <a href="Request.html">Get an Artisan</a>
+                     </li>
+            <li class="nav-item">
+                <a href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact">Contact</a>
+            </li>
+    
+            
+        </ul>
+
+        
+    </nav>
+<?php
+include('functions/functions.php');
+?>
+    <div class="get-artisan">
+        <div class="get">
+            <h2>
+                Get an Artisan
+            </h2>
+            <form class="row g-3" method="POST">
+                <div class="col-md-4">
+                  <label for="inputName" class="form-label">Name</label>
+                  <input type="name" name="name" class="form-control" id="inputName" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="inputNumber4" class="form-label">Phone Number</label>
+                  <input type="number" name="phone_no" class="form-control" id="inputNumber4" required>
+                </div>
+                <div class="col-md-4">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" name="email" class="form-control" id="inputEmail4" required>
+                </div>
+                <div class="col-6">
+                    <label for="inputAtisan" class="form-label">Artisan Needed</label>
+                    <input type="text" name="artisan_needed"class="form-control" id="inputArtisan" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputtime" class="form-label">Time of Need</label>
+                    <input type="date" name="time_of_need" class="form-control" id="inputNumber4" required>
+                  </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" name="address" class="form-control" id="inputAddress" placeholder="Location" required>
+                </div>
+                
+                  <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4 mb-lg-0">
+                    <button type="submit" name="artisan_get" class="btn btn-primary btn-lg btn-block text-white btn-search" id="button"><span class="icon-search icon mr-2"></span>Get</button>
+                </div>
+                
+              </form>
+            
+        </div>
+    </div>
+
+    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+     
+     <script>
+         function(document.getElementById("button")) {
+            alert('Thanks for applying for an artisan,you wil receive a mail shorthly.')
+        }
+     </script>
+</body>
+</html>
